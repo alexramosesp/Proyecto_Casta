@@ -52,7 +52,7 @@ div .producto, .producto1 {
     min-height: 100%;
     width: 100%;
     background-color: #E3E6E6;
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
 }
 
@@ -114,12 +114,16 @@ header {
 #menu ul li:hover a {
     color: white;
 }
-div .producto, .producto1 {
+div.producto {
     display: inline-block;
     margin: 1em;
+    width: 20%;
+
 }
-footer {margin-top: 1em; background-color: #485769}
+footer {margin-top: 1em; background-color: #485769; display: block}
 /* Resto de estilos para tabletas o pantallas más pequeñas */
+
+
 @media (max-width: 768px) {
     header {
         flex-direction: column; /* Apilamos los elementos en columnas */
@@ -138,7 +142,7 @@ footer {margin-top: 1em; background-color: #485769}
 
     .producto,
     .producto1 {
-        display: block; /* Cambiamos a bloque para que se apilen en columnas */
+        display: block;  /*Cambiamos a bloque para que se apilen en columnas */
         margin: 1em auto; /* Centramos los productos */
         text-align: center; /* Centramos el contenido */
     }
