@@ -1,0 +1,145 @@
+/* Paginas
+#contenedor {height: 100%; width: 100%; background-color: #E3E6E6}
+header {background-color: #131921; width: 100%; height: 100%}
+#logo {display: inline-block;}
+#logo img {margin: 1em 0em 0em 1em;}
+#titol {display: inline-block; color: white; margin-left: 30%; position: relative; top: -1em;}
+#cesta {display: inline-block; margin-left: 30%;}
+#menu {width: 100%; display: block}
+#menu ul li {display: inline-block; float: left; padding-right: 10.5%; padding-left: 9.7%; background-color: #232F3E; border: 1em; font-family: Arial; font-size: 1.3em;}
+#menu ul li a {color: white; text-decoration: none;}
+#menu ul li:hover {background-color: red;}
+#menu ul li:hover a {color: white;}
+footer {margin-top: 1em; background-color: #485769}
+.scroll-top {
+    text-align: center;
+}
+.scroll-top a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+.contacte {
+    text-align: center;
+    margin-top: 1em;
+}
+.contacte a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+.cataleg {
+    text-align: center;
+    margin-top: 1em;
+}
+.cataleg a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+Pagina Cataleg
+div .producto, .producto1 {
+    display: inline-block;
+    margin: 1em;
+}
+.producto1 {
+    margin-left: 3.5em;
+}
+*/
+/* Paginas */
+#contenedor {
+    min-height: 100%;
+    width: 100%;
+    background-color: #E3E6E6;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #131921;
+    width: 100%;
+    height: auto; /* Cambiamos height a auto para que se ajuste al contenido */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Alineamos los elementos en los extremos */
+    align-items: center; /* Centramos verticalmente */
+    padding: 10px;
+}
+
+#logo img {
+    margin: 0.5em;
+    max-width: 100%; /* Ajustamos el ancho máximo de la imagen */
+}
+
+#titol {
+    color: white;
+    flex: 1; /* Ocupa el espacio restante */
+    text-align: center;
+}
+
+#cesta {
+    margin: 0.5em;
+}
+
+#menu {
+    width: 100%;
+    display: block;
+    background-color: #232F3E;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 1.3em;
+    padding: 10px 20px; /* Añadimos espacio alrededor del enlace */
+}
+
+#menu ul li:hover {
+    background-color: red;
+}
+
+#menu ul li:hover a {
+    color: white;
+}
+div .producto, .producto1 {
+    display: inline-block;
+    margin: 1em;
+}
+footer {margin-top: 1em; background-color: #485769}
+/* Resto de estilos para tabletas o pantallas más pequeñas */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Apilamos los elementos en columnas */
+        text-align: center; /* Centramos el texto */
+    }
+
+    #titol {
+        margin-top: 10px; /* Añadimos un margen superior */
+    }
+
+    #menu ul li {
+        display: block;
+        text-align: center; /* Centramos los elementos del menú */
+        padding: 10px 0; /* Añadimos espacio alrededor del enlace */
+    }
+
+    .producto,
+    .producto1 {
+        display: block; /* Cambiamos a bloque para que se apilen en columnas */
+        margin: 1em auto; /* Centramos los productos */
+        text-align: center; /* Centramos el contenido */
+    }
+}
