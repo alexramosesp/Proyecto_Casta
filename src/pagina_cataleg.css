@@ -1,68 +1,18 @@
-/* Paginas
-#contenedor {height: 100%; width: 100%; background-color: #E3E6E6}
-header {background-color: #131921; width: 100%; height: 100%}
-#logo {display: inline-block;}
-#logo img {margin: 1em 0em 0em 1em;}
-#titol {display: inline-block; color: white; margin-left: 30%; position: relative; top: -1em;}
-#cesta {display: inline-block; margin-left: 30%;}
-#menu {width: 100%; display: block}
-#menu ul li {display: inline-block; float: left; padding-right: 10.5%; padding-left: 9.7%; background-color: #232F3E; border: 1em; font-family: Arial; font-size: 1.3em;}
-#menu ul li a {color: white; text-decoration: none;}
-#menu ul li:hover {background-color: red;}
-#menu ul li:hover a {color: white;}
-footer {margin-top: 1em; background-color: #485769}
-.scroll-top {
-    text-align: center;
-}
-.scroll-top a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.3em;
-}
-.contacte {
-    text-align: center;
-    margin-top: 1em;
-}
-.contacte a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.3em;
-}
-.cataleg {
-    text-align: center;
-    margin-top: 1em;
-}
-.cataleg a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.3em;
-}
-
-Pagina Cataleg
-div .producto, .producto1 {
-    display: inline-block;
-    margin: 1em;
-}
-.producto1 {
-    margin-left: 3.5em;
-}
-
 /* Paginas */
 #contenedor {
     min-height: 100%;
-    width: 100%;
     background-color: #E3E6E6;
-    /*display: flex;*/
     flex-direction: column;
     background-image: linear-gradient(#ffff, #ababab);
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
 }
 
 header {
     background-color: #131921;
-    width: 100%;
+    width: 98.7%;
     height: auto; /* Cambiamos height a auto para que se ajuste al contenido */
     display: flex;
     flex-wrap: wrap;
@@ -95,6 +45,9 @@ header {
     width: 100%;
     display: block;
     background-color: #232F3E;
+    position: sticky;
+    top: 0;
+    margin: auto;
 }
 
 #menu ul {
@@ -124,13 +77,193 @@ header {
 #menu ul li:hover a {
     color: white;
 }
-div.producto {
-    display: inline-block;
-    margin: 1em;
-    width: 20%;
 
+h1{
+    font-size: 2.5rem;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #444;
+    text-align: center;
+    margin: 2rem 0;
 }
-footer {margin-top: 1em; background-color: #485769; display: block; text-align: center;}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+.cols{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.col{
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.container{
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.front,
+.back{
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+    border-radius: 10px;
+    background-position: center;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.back{
+    background: #cedce7;
+    background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+    background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+    background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+}
+
+.front:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.container:hover .front,
+.container:hover .back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner{
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+}
+
+.container .back{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container .front{
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container:hover .back{
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container:hover .front{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.front .inner p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.front .inner p:after{
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+}
+
+.front .inner span{
+    color: rgba(255,255,255,0.7);
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+@media screen and (max-width: 64rem){
+    .col{
+        width: calc(33.333333% - 2rem);
+    }
+}
+
+@media screen and (max-width: 48rem){
+    .col{
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 32rem){
+    .col{
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+}
+footer {background-color: #485769; display: block; text-align: center; position: absolute; bottom: 0px; left: 0px; right: 0px;}
 /* Resto de estilos para tabletas o pantallas más pequeñas */
 
 
