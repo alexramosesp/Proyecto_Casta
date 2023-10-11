@@ -54,6 +54,10 @@ div .producto, .producto1 {
     background-color: #E3E6E6;
     /*display: flex;*/
     flex-direction: column;
+    background-image: linear-gradient(#ffff, #ababab);
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -67,9 +71,12 @@ header {
     padding: 10px;
 }
 
+#logo {
+    width: 20%;
+}
 #logo img {
     margin: 0.5em;
-    max-width: 100%; /* Ajustamos el ancho máximo de la imagen */
+    width: 40%;
 }
 
 #titol {
@@ -80,6 +87,8 @@ header {
 
 #cesta {
     margin: 0.5em;
+    width: 20%;
+    float: right;
 }
 
 #menu {
@@ -91,6 +100,7 @@ header {
 #menu ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 #menu ul li {
@@ -120,7 +130,7 @@ div.producto {
     width: 20%;
 
 }
-footer {margin-top: 1em; background-color: #485769; display: block}
+footer {margin-top: 1em; background-color: #485769; display: block; text-align: center;}
 /* Resto de estilos para tabletas o pantallas más pequeñas */
 
 
