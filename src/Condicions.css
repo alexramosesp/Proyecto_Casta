@@ -1,0 +1,89 @@
+#contenedor {
+    min-height: 100%;
+    width: 100%;
+    background-color: #E3E6E6;
+    /*display: flex;*/
+    flex-direction: column;
+}
+
+header {
+    background-color: #131921;
+    width: 100%;
+    height: auto; /* Cambiamos height a auto para que se ajuste al contenido */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Alineamos los elementos en los extremos */
+    align-items: center; /* Centramos verticalmente */
+    padding: 10px;
+}
+
+#logo {
+    width: 20%;
+}
+#logo img {
+    margin: 0.5em;
+    width: 40%;
+}
+
+#titol {
+    color: white;
+    flex: 1; /* Ocupa el espacio restante */
+    text-align: center;
+}
+
+#cesta {
+    margin: 0.5em;
+    width: 20%;
+    float: right;
+}
+
+#menu {
+    width: 100%;
+    display: block;
+    background-color: #232F3E;
+    margin-bottom: 3em;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#menu ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 1.3em;
+    padding: 10px 20px; /* Añadimos espacio alrededor del enlace */
+}
+
+#menu ul li:hover {
+    background-color: red;
+}
+
+#menu ul li:hover a {
+    color: white;
+}
+
+h2{
+    font-family: Arial;
+    color: #ff8800;
+
+}
+#condicionesCompra{
+    font-family: Arial
+}
+body{
+    background-image: linear-gradient(#ffff, #ababab);
+}
+p,li{
+    font-family: Arial;
+}
+#body2{padding-left: 3em}
