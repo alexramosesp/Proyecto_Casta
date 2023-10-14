@@ -1,89 +1,112 @@
-#contenedor {
-    min-height: 100%;
-    width: 100%;
-    background-color: #E3E6E6;
-    /*display: flex;*/
-    flex-direction: column;
-}
-
-header {
-    background-color: #131921;
-    width: 100%;
-    height: auto; /* Cambiamos height a auto para que se ajuste al contenido */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Alineamos los elementos en los extremos */
-    align-items: center; /* Centramos verticalmente */
-    padding: 10px;
-}
-
-#logo {
-    width: 20%;
-}
-#logo img {
-    margin: 0.5em;
-    width: 40%;
-}
-
-#titol {
-    color: white;
-    flex: 1; /* Ocupa el espacio restante */
-    text-align: center;
-}
-
-#cesta {
-    margin: 0.5em;
-    width: 20%;
-    float: right;
-}
-
-#menu {
-    width: 100%;
-    display: block;
-    background-color: #232F3E;
-    margin-bottom: 3em;
-}
-
-#menu ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-
-#menu ul li {
-    display: inline-block;
-    padding: 0;
+/* Inicio menu */
+body {
+    font-family: Gabarito; /* Usar la fuente adecuada aquí */
     margin: 0;
+    padding: 0;
 }
-
-#menu ul li a {
-    color: white;
+h1 a{
     text-decoration: none;
-    font-family: Arial;
-    font-size: 1.3em;
-    padding: 10px 20px; /* Añadimos espacio alrededor del enlace */
-}
-
-#menu ul li:hover {
-    background-color: red;
-}
-
-#menu ul li:hover a {
     color: white;
+    font-family: Gabarito;
+    }
+h1 a:hover{
+    text-decoration: none;
+    color: #dc821e;
 }
-
 h2{
-    font-family: Arial;
-    color: #ff8800;
+    color: #C3896E;
+}
 
+
+.menu-bar {
+    background-color: #4F5D69; /* Azul pastel claro */
+    color: #fff; /* Color de letra blanco */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
-#condicionesCompra{
-    font-family: Arial
+
+/* Sección izquierda (Título) */
+.left-section {
+    margin-right: 20px;
 }
-body{
-    background-image: linear-gradient(#ffff, #ababab);
+
+/* Sección central (Enlaces) */
+.center-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
 }
-p,li{
-    font-family: Arial;
+
+.center-section ul li {
+    margin-right: 70px; /* Aumentamos el espacio entre los elementos */
 }
-#body2{padding-left: 3em}
+
+.center-section ul li:last-child {
+    margin-right: 0; /* Dejamos el último elemento sin espacio derecho */
+}
+
+.center-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s; /* Agregamos una transición de color suave */
+}
+
+.center-section ul li a:hover {
+    color: #dc821e; /* Cambia el color del texto al pasar el cursor por encima */
+}
+
+/* Sección derecha (Botón de inicio de sesión) */
+.right-section .login-button {
+    background-color: transparent;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s; /* Agregamos una transición de color suave */
+}
+
+.right-section .login-button:hover {
+    color: #dc821e; /* Cambia el color del texto al pasar el cursor por encima */
+}
+
+.right-section .login-button i {
+    margin-right: 5px;
+}
+/*fin menu*/
+
+
+#body2{padding-left: 3em;}
+#body2 p{width: 98%}
+#condicionesCompra{text-align: center; margin-bottom: 2em;}
+
+/*FOOTER*/
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5em;
+    align-items: center;
+}
+
+/* Estilo para los iconos */
+.footer-icons {
+    font-size: 24px;
+    margin: 10px;
+}
+
+/* Estilo para los enlaces de redes sociales */
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+}
+i{color: white; text-decoration: none }
+a.footer-social{color: transparent; margin: 1em}
