@@ -1,222 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"><link href="pagina_cataleg.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Gabarito' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <title>CastaFC Cataleg</title>
-    <meta name="author" content="CastaFC">
-    <meta name="descripcio" content="Aquesta pàgina web ha estat creada en una projecte de cicle superior DAM per l'Àlex Ramos, en Raul Luna i en Luca Yeray Andrade.
-La pàgina inclou un header amb logo i títol, una secció nav amb un menú horitzontal per poder viatjar entre les pàgines
-un formulari en alguna de les pagines, i un media query.">
-    <link rel="stylesheet" type="text/css" href="pagina_cataleg.css">
 </head>
 <body>
-<div id="contenedor">
-    <header>
-        <div id="logo"><img src="CastaEscudo.png"></div>
-        <div id="titol"><h1>CATÀLEG</h1></div>
-        <div id="cesta"><a href="Cistella.html"><img src="Cesta.png"></a></div>
-    </header>
 
-    <nav>
-        <div id="menu">
-            <ul>
-                <li><a href="Index.html">Main</a></li>
-                <li><a href="pagina_cataleg.html">Catàleg</a></li>
-                <li><a href="Cistella.html">Cistella</a></li>
-                <li><a href="ContacteFormulari.html">Contacte</a></li>
-                <li><a href="Formulari_Registre.html">Registre</a></li>
-                <li><a href="FormulariInicisessio.html">Login</a></li>
-                <li><a href="Condicions.html">Condicions</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!--
-    <div class="producto">
-        <form action="" method="post">
-            <img src="" alt="Producto 1">
-            <div class="nombre-producto">Producto 1</div>
-            <div class="precio">$19.99</div>
-            <p>Descripción del producto 1.</p>
-            <label for="producto1">Quantitat</label>
-            <select id="producto1">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select>
-            <br />
-            <button type="submit">Afageix a la cistella</button>
-        </form>
+<div class="menu-bar">
+    <div class="left-section">
+        <h1><a href="Index.html">Casta FC</a></h1>
     </div>
-
-    <div class="producto">
-        <form action="" method="post">
-            <img src="" alt="Producto 2">
-            <div class="nombre-producto">Producto 2</div>
-            <div class="precio">$24.99</div>
-            <p>Descripción del producto 2.</p>
-            <label for="producto2">Quantitat</label>
-            <select id="producto2">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select><br />
-            <button type="submit">Afageix a la cistella</button>
-        </form>
+    <div class="center-section">
+        <ul>
+            <li><a href="Condicions.html">Condicions</a></li>
+            <li><a href="Formulari_Registre.html">Formulari</a></li>
+            <li><a href="ContacteFormulari.html">Contacte</a></li>
+            <li><a href="pagina_cataleg.html">Catàleg</a></li>
+        </ul>
     </div>
-
-    <div class="producto">
-        <form action="" method="post">
-            <img src="" alt="Producto 3">
-            <div class="nombre-producto">Producto 3</div>
-            <div class="precio">$29.99</div>
-            <p>Descripción del producto 3.</p>
-            <label for="producto3">Quantitat</label>
-            <select id="producto3">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select><br />
-            <button type="submit">Afageix a la cistella</button>
-        </form>
+    <div class="right-section">
+        <a href="#" class="login-button">
+            <i class="fas fa-sign-in-alt"></i> Iniciar Sessió
+        </a>
     </div>
+</div>
 
-    <div class="producto">
-        <form action="" method="post">
-            <img src="" alt="Producto 4">
-            <div class="nombre-producto">Producto 4</div>
-            <div class="precio">$29.99</div>
-            <p>Descripción del producto 4.</p>
-            <label for="producto4">Quantitat</label>
-            <select id="producto4">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select><br />
-            <button type="submit">Afageix a la cistella</button>
-        </form>
-    </div>
-
-    <div class="producto">
-        <form action="" method="post">
-            <img src="" alt="Producto 5">
-            <div class="nombre-producto">Producte 5</div>
-            <div class="precio">$29.99</div>
-            <p>Descripció del producte 5.</p>
-            <label for="producto5">Quantitat</label>
-            <select id="producto5" name="cantidad_producto5">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select><br />
-            <button type="submit">Afageix a la cistella</button>
-        </form>
-    </div>
-
-    <div class="producto">
-        <form action="" method="post">
-            <img src="" alt="Producto 6">
-            <div class="nombre-producto">Producte 6</div>
-            <div class="precio">$29.99</div>
-            <p>Descripció del producte 6.</p>
-            <label for="producto6">Quantitat</label>
-            <select id="producto6" name="cantidad_producto5">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select><br />
-            <button type="submit">Afageix a la cistella</button>
-        </form>
-    </div>
-
-    <div class="producto">
-        <form action="" method="post">
-            <img src="" alt="Producto 7">
-            <div class="nombre-producto">Producte 7</div>
-            <div class="precio">$29.99</div>
-            <p>Descripció del producte 7.</p>
-            <label for="producto7">Quantitat</label>
-            <select id="producto7" name="cantidad_producto5">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select><br />
-            <button type="submit">Afageix a la cistella</button>
-        </form>
-    </div>
-
-    <div class="producto">
-        <form action="" method="post">
-            <img src="" alt="Producto 8">
-            <div class="nombre-producto">Producte 8</div>
-            <div class="precio">$29.99</div>
-            <p>Descripció del producte 8.</p>
-            <label for="producto8">Quantitat</label>
-            <select id="producto8" name="cantidad_producto5">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select><br />
-            <button type="submit">Afageix a la cistella</button>
-        </form>
-    </div>
--->
     <!-- partial:index.partial.html -->
     <div class="wrapper">
         <div class="cols">
@@ -231,13 +42,24 @@ un formulari en alguna de les pagines, i un media query.">
                     <div class="back">
                         <div class="inner">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                            <form action="Cistella.html" method="post">
+                                <label for="Quantitat1">Quantitat</label>
+                                <select id="Quantitat1" name="Quantitat">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <!-- Puedes agregar más opciones aquí -->
+                                </select>
+                                <br>
+                                <input type="submit" value="Afageix a la cistella">
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col" ontouchstart="this.classList.toggle('hover');">
                 <div class="container">
-                    <div class="front" style="url(https://unsplash.it/511/511/)">
+                    <div class="front" style="background-image: url(https://unsplash.it/511/511/)">
                         <div class="inner">
                             <p>Rocogged</p>
                             <span>Lorem ipsum</span>
@@ -246,6 +68,17 @@ un formulari en alguna de les pagines, i un media query.">
                     <div class="back">
                         <div class="inner">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                            <form action="Cistella.html" method="post">
+                                <label for="Quantitat2">Quantitat</label>
+                                <select id="Quantitat2" name="Quantitat">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <!-- Puedes agregar más opciones aquí -->
+                                </select>
+                                <br>
+                                <input type="submit" value="Afageix a la cistella">
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -261,6 +94,17 @@ un formulari en alguna de les pagines, i un media query.">
                     <div class="back">
                         <div class="inner">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                            <form action="Cistella.html" method="post">
+                                <label for="Quantitat3">Quantitat</label>
+                                <select id="Quantitat3" name="Quantitat">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <!-- Puedes agregar más opciones aquí -->
+                                </select>
+                                <br>
+                                <input type="submit" value="Afageix a la cistella">
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -276,6 +120,17 @@ un formulari en alguna de les pagines, i un media query.">
                     <div class="back">
                         <div class="inner">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                            <form action="Cistella.html" method="post">
+                                <label for="Quantitat4">Quantitat</label>
+                                <select id="Quantitat4" name="Quantitat">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <!-- Puedes agregar más opciones aquí -->
+                                </select>
+                                <br>
+                                <input type="submit" value="Afageix a la cistella">
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -291,6 +146,17 @@ un formulari en alguna de les pagines, i un media query.">
                     <div class="back">
                         <div class="inner">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                            <form action="Cistella.html" method="post">
+                                <label for="Quantitat5">Quantitat</label>
+                                <select id="Quantitat5" name="Quantitat">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <!-- Puedes agregar más opciones aquí -->
+                                </select>
+                                <br>
+                                <input type="submit" value="Afageix a la cistella">
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -306,6 +172,17 @@ un formulari en alguna de les pagines, i un media query.">
                     <div class="back">
                         <div class="inner">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                            <form action="Cistella.html" method="post">
+                                <label for="Quantitat6">Quantitat</label>
+                                <select id="Quantitat6" name="Quantitat">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <!-- Puedes agregar más opciones aquí -->
+                                </select>
+                                <br>
+                                <input type="submit" value="Afageix a la cistella">
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -321,6 +198,17 @@ un formulari en alguna de les pagines, i un media query.">
                     <div class="back">
                         <div class="inner">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                            <form action="Cistella.html" method="post">
+                                <label for="Quantitat7">Quantitat</label>
+                                <select id="Quantitat7" name="Quantitat">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <!-- Puedes agregar más opciones aquí -->
+                                </select>
+                                <br>
+                                <input type="submit" value="Afageix a la cistella">
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -336,6 +224,17 @@ un formulari en alguna de les pagines, i un media query.">
                     <div class="back">
                         <div class="inner">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                            <form action="Cistella.html" method="post">
+                                <label for="Quantitat8">Quantitat</label>
+                                <select id="Quantitat8" name="Quantitat">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <!-- Puedes agregar más opciones aquí -->
+                                </select>
+                                <br>
+                                <input type="submit" value="Afageix a la cistella">
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -344,17 +243,22 @@ un formulari en alguna de les pagines, i un media query.">
     </div>
     <br />
     <!-- partial -->
-    <footer>
-        <div class="scroll-top"> <!--scrollbar at the end of main-->
-            <a class="scroll-top__link" href="#">Back to top</a> <!--href="#" navigates to the top of the page-->
-        </div>
-        <div class="contacte">
-            <a href="">Contacte'ns</a>
-        </div>
-        <div class="cataleg">
-            <a href="pagina_cataleg.html">Cataleg</a>
-        </div>
-    </footer>
+<footer class="footer">
+    <div class="footer-icons">
+        <!-- Iconos de redes sociales -->
+        <a class="footer-social" href="#">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a class="footer-social" href="#">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a class="footer-social" href="#">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    <!-- Texto adicional, como derechos de autor o información de contacto -->
+    <p>&copy; 2023 Casta FC. Tots els drets reservats.</p>
+</footer>
 </div>
 </body>
 </html>
